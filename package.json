@@ -1,0 +1,44 @@
+{
+  "name": "grunt-ssimin",
+  "version": "0.1.0",
+  "author": {
+    "name": "James O'Reilly",
+    "url": "https://github.com/jamesor"
+  },
+  "description": "Grunt task to convert blocks of HTML into Server-Side Includes (SSI)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gruntplugin",
+    "ssimin",
+    "yeoman",
+    "html",
+    "ssi",
+    "server-side include",
+    "include",
+    "optimize"
+  ],
+  "homepage": "https://github.com/jamesor/grunt-ssimin",
+  "bugs": {
+    "url": "https://github.com/jamesor/grunt-ssimin/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jamesor/grunt-ssimin.git"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.0"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "licenses": [
+    {
+      "type": "BSD",
+      "url": "https://github.com/jamesor/grunt-ssimin/blob/master/LICENSE-BSD"
+    }
+  ],
+  "readmeFilename": "README.md"
+}
