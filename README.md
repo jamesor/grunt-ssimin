@@ -7,9 +7,16 @@ If you haven't used [grunt][] before, be sure to check out the [Getting Started]
 npm install grunt-ssimin --save-dev
 ```
 
+## Why the ssimin task?
+
+If you use a server-side technology to dynamically assemble pages but need to only hand off the final rendered output you might be using a workflow that involves viewing the page in a browser and saving the source code.  One problem with this method is that any server-side includes you want to maintain are rendered out to the response.  The ssimin task scans the rendered output for where the include blocks should be, cuts them out, replaces them with a proper include tag and finally saves the cut content to include file at the specified path.
+
+The ssimin task works really well when it directly follows the [grunt-curl][] task which curls the pages you want and stores them to your dist folder.  Then the ssimin task would then operate on those fetched files already in your dist folder.
+
+
 ## The ssimin task
 
-Inspired by [yeoman/grunt-usemin][], the following task looks for custom HTML "block" comments, removes them from the content and replaces them with include tags.
+Inspired by [grunt-usemin][], the following task looks for custom HTML "block" comments, removes them from the content and replaces them with include tags.
 
 Custom HTML "block" comments are provided as an API for interacting with the build script. These comments adhere to the following pattern:
 
@@ -62,4 +69,5 @@ The files will be out put to the dist folder defined in Yeoman config.
 
 [grunt]: http://gruntjs.com/
 [Getting Started]: https://github.com/gruntjs/grunt/blob/devel/docs/getting_started.md
-[yeoman/grunt-usemin]: https://github.com/yeoman/grunt-usemin
+[grunt-usemin]: https://github.com/yeoman/grunt-usemin
+[grunt-curl]: https://github.com/twolfson/grunt-curl
