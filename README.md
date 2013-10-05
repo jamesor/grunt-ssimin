@@ -12,7 +12,7 @@ npm install grunt-usemin --save-dev
 
 ## The ssimin task
 
-This task looks for custom HTML "block" comments, removes them from the content and replaces them with include tags.
+Inspired by yeoman/grunt-usemin, the following task looks for custom HTML "block" comments, removes them from the content and replaces them with include tags.
 
 Custom HTML "block" comments are provided as an API for interacting with the build script. These comments adhere to the following pattern:
 
