@@ -7,12 +7,9 @@ If you haven't used [grunt][] before, be sure to check out the [Getting Started]
 npm install grunt-usemin --save-dev
 ```
 
-[grunt]: http://gruntjs.com/
-[Getting Started]: https://github.com/gruntjs/grunt/blob/devel/docs/getting_started.md
-
 ## The ssimin task
 
-Inspired by yeoman/grunt-usemin, the following task looks for custom HTML "block" comments, removes them from the content and replaces them with include tags.
+Inspired by [yeoman/grunt-usemin][], the following task looks for custom HTML "block" comments, removes them from the content and replaces them with include tags.
 
 Custom HTML "block" comments are provided as an API for interacting with the build script. These comments adhere to the following pattern:
 
@@ -62,3 +59,7 @@ The files will be out put to the dist folder defined in Yeoman config.
 ## License
 
 [BSD license](https://github.com/jamesor/grunt-ssimin/blob/master/LICENSE-BSD) and copyright James O'Reilly
+
+[grunt]: http://gruntjs.com/
+[Getting Started]: https://github.com/gruntjs/grunt/blob/devel/docs/getting_started.md
+[yeoman/grunt-usemin]: https://github.com/yeoman/grunt-usemin
