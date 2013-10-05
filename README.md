@@ -4,7 +4,7 @@
 If you haven't used [grunt][] before, be sure to check out the [Getting Started][] guide, as it explains how to create a [gruntfile][Getting Started] as well as install and use grunt plugins. Once you're familiar with that process, install this plugin with this command:
 
 ```shell
-npm install grunt-usemin --save-dev
+npm install grunt-ssimin --save-dev
 ```
 
 ## The ssimin task
