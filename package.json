@@ -29,7 +29,7 @@
     "url": "git://github.com/jamesor/grunt-ssimin.git"
   },
   "peerDependencies": {
-    "grunt": "~0.4.0"
+    "grunt": ">=0.4.0"
   },
   "engines": {
     "node": ">=0.8.0"
